@@ -1,0 +1,87 @@
+Delivered-To: m.weingart@4teamwork.ch
+Received: by 10.194.19.10 with SMTP id a10csp254231wje;
+        Tue, 6 May 2014 11:52:02 -0700 (PDT)
+X-Received: by 10.14.194.133 with SMTP id m5mr13309945een.38.1399402322620;
+        Tue, 06 May 2014 11:52:02 -0700 (PDT)
+Return-Path: <maenujem@gmx.net>
+Received: from mout.gmx.net (mout.gmx.net. [212.227.17.21])
+        by mx.google.com with ESMTPS id u9si1413675eel.329.2014.05.06.11.52.01
+        for <m.weingart@4teamwork.ch>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 06 May 2014 11:52:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of maenujem@gmx.net designates 212.227.17.21 as permitted sender) client-ip=212.227.17.21;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of maenujem@gmx.net designates 212.227.17.21 as permitted sender) smtp.mail=maenujem@gmx.net
+Received: from [77.58.18.196] by 3capp-gmx-bs41 with HTTP; Tue, 6 May 2014
+ 20:52:01 +0200
+MIME-Version: 1.0
+Message-ID: <trinity-4cd62376-fae9-4655-913b-dedd1d982265-1399402321504@3capp-gmx-bs41>
+From: "manuel j. schaffner." <maenujem@gmx.net>
+To: "Michel Weingart" <m.weingart@4teamwork.ch>
+Subject: Re: IPA Zeitplan
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 6 May 2014 20:52:01 +0200
+Importance: normal
+Sensitivity: Normal
+X-Priority: 3
+X-Provags-ID: V03:K0:kdOsXqQ6HenAwfPKIv0GEBcT5xavvlt2YPoxb72HJUo
+ Cnto3TynF6CR4OAWnw4u/rtbTmmLTUVqs/SfhlUXLiPHZvZ9Yn
+ hDc6VBY5yUtQHRb6X2o14cbUDuXtTp2ND11HC8+4+fcUYdwrQ0
+ oujqCaK4/y36WNcPUc6/PBXVpSdatGQMJWHefJ9WMAr42clUgP
+ 0HAyi+JLPAlxsCxf7cXa0Hfaf38YznRl5Mv4zGlgKEfJ0pz9ds
+ QLVrQidbtxYJh9HmBP3hQZeX/R3E4szBqAJMP1km8GH6h0DwX2 VOnJVU=
+
+<html><head></head><body><div style="font-family: Verdana;font-size: 12.0px;"><div>
+<div>Guten Tag Herr Weingart,</div>
+
+<div>&nbsp;</div>
+
+<div>kleine Verschiebungen zwischen IST/SOLL gibt es h&auml;ufig - das ist normal. Daher werden im Projektplan auch die geplanten und tats&auml;chlichen Zeiten als separate Zeilen/Balken gef&uuml;hrt. Im Arbeitsjournal haben sie dann die Zeiten f&uuml;r die detaillierteren T&auml;tigkeiten - auch wieder gesch&auml;tzte Zeit und tats&auml;chliche Zeit. Da kann es T&auml;tigkeiten geben, die kommen pl&ouml;tzlich hinzu (-&gt; geplant: 0h) oder fallen weg / werden veschoben (-&gt; ist: 0h). Die Gr&uuml;nde f&uuml;r solche Verschiebungen k&ouml;nnen dann zB. in der Tagesreflexion zum Ausdruck kommen.</div>
+
+<div>&nbsp;</div>
+
+<div>Wir treffen uns ja morgen Abend (so gegen 17:30, sobald ich aus meinem Kurs weg kann) und werden sowieso die Planung zusammen durchgehen. Die geplanten Zeiten k&ouml;nnen sie bis dahin sicher so belassen.</div>
+
+<div>&nbsp;</div>
+
+<div>Freundliche Gr&uuml;sse,</div>
+
+<div>Manuel Schaffner</div>
+
+<div>&nbsp;</div>
+
+<div>------- Nachricht von Michel Weingart &lt;m.weingart@4teamwork.ch&gt; -------</div>
+
+<div>&gt; Sehr geehrter Herr Schaffner<br/>
+&gt;<br/>
+&gt; Gestern habe ich meinen Zeitplan erstellt. Nun habe ich heute bemerkt,<br/>
+&gt; dass eine kleine &Auml;nderung der Durchf&uuml;hrungszeiten angemessen w&auml;re.<br/>
+&gt;<br/>
+&gt; Konkret:<br/>
+&gt; F&uuml;r morgen habe ich geplant, das Zugriffskonzept am Morgen zu erarbeiten.<br/>
+&gt; Nun denke ich, dass dies am Morgen und am Nachmittag eingeplant werden<br/>
+&gt; sollte.<br/>
+&gt;<br/>
+&gt; Nun ist mir hierzu das Vorgehen nicht ganz ersichtlich.<br/>
+&gt; Soll ich den Zeitplan &auml;ndern mit Vermerk in meiner Dokumentation oder<br/>
+&gt; darf ich den Zeitplan nicht &auml;ndern und falls die Erarbeitung morgen l&auml;nger<br/>
+&gt; gehen sollte als geplant, m&uuml;sste ich dies im Arbeitsjournal eintragen?<br/>
+&gt;<br/>
+&gt; Freundliche Gr&uuml;sse und besten Dank<br/>
+&gt; Michel Weingart<br/>
+&gt;<br/>
+&gt; 4teamwork AG<br/>
+&gt; Michel Weingart<br/>
+&gt; IT Supporter<br/>
+&gt; Engehaldenstrasse 53<br/>
+&gt; CH-3012 Bern<br/>
+&gt;<br/>
+&gt; Tel +41 31 511 04 19<br/>
+&gt; Fax +41 31 305 90 25<br/>
+&gt;<br/>
+&gt; michel.weingart@4teamwork.ch<br/>
+&gt; www.4teamwork.ch<br/>
+&gt;<br/>
+&gt; Folgen Sie uns auf Twitter: @4teamwork<br/>
+&gt;</div>
+</div></div></body></html>
