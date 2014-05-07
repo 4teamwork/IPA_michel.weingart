@@ -1,0 +1,839 @@
+Delivered-To: m.weingart@4teamwork.ch
+Received: by 10.194.19.10 with SMTP id a10csp241946wje;
+        Tue, 6 May 2014 09:20:49 -0700 (PDT)
+X-Received: by 10.15.63.200 with SMTP id m48mr7146223eex.87.1399393248851;
+        Tue, 06 May 2014 09:20:48 -0700 (PDT)
+Return-Path: <t.buchberger@4teamwork.ch>
+Received: from mail-ee0-x230.google.com (mail-ee0-x230.google.com [2a00:1450:4013:c00::230])
+        by mx.google.com with ESMTPS id 43si13847948eei.115.2014.05.06.09.20.48
+        for <m.weingart@4teamwork.ch>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 06 May 2014 09:20:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of t.buchberger@4teamwork.ch designates 2a00:1450:4013:c00::230 as permitted sender) client-ip=2a00:1450:4013:c00::230;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of t.buchberger@4teamwork.ch designates 2a00:1450:4013:c00::230 as permitted sender) smtp.mail=t.buchberger@4teamwork.ch;
+       dkim=pass header.i=@4teamwork.ch
+Received: by mail-ee0-f48.google.com with SMTP id e49so5433367eek.7
+        for <m.weingart@4teamwork.ch>; Tue, 06 May 2014 09:20:48 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=4teamwork.ch; s=google;
+        h=from:content-type:content-transfer-encoding:subject:message-id:date
+         :to:mime-version;
+        bh=10nlvRLhefy6bsmj1KiMmazj/bN5oFBYNsi+sx0Sdmg=;
+        b=PvwM7J5F5Q+xiDhzKspaTy8+evauldekeFRYApIc64CfIWlCM1P8wjoo0Ce/1sdVeW
+         XApzP0CRaop229xW9uExuVLBmZFlvUEOKIReoFrRmHx/hPQrmDoBj0WvKSqrHE2mzS0A
+         kY0NNS9tximtzrkJ2xRm2L0Etynttv6Z8WIC8=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:from:content-type:content-transfer-encoding
+         :subject:message-id:date:to:mime-version;
+        bh=10nlvRLhefy6bsmj1KiMmazj/bN5oFBYNsi+sx0Sdmg=;
+        b=hZvn3kWbjmv5wheQVpvZfi2C+8XR79K0Qxp2hy+7CVkcj7TBC3SRl3ITqodYhlHtgd
+         bNKlupP4ehD3cj5C7vdpUw5YLezg73knPTUwD+FomnmIJt6ZJPUgIw7V2+e16AmmXcL6
+         9I4Xf+3LJgQ2Wzoubb00qtn9jCmjdqNs/exsEYliSAakSUvsfxi8fGdCBvcrG6Tu+Uo2
+         UbeCreIEPK+IuqZLkUM+rciY+ym0Edn42OGJ9Ct7rmfrbAqrWxxJffdTMHSGVWjBB8lo
+         ENsJUfyx2PYRhO425TtZZI6nL2Bn4ZjK4QN6YirQuz1L7GlS6TXhY2+JF2+lXy/UUxCT
+         UgcQ==
+X-Gm-Message-State: ALoCoQlcLcnJ4eRU8sg6Kmbaa3WPdPkB7VMh/8EYUWgxfFHb40D2eFRhXW5juGTfGWkHUpkO1QO5
+X-Received: by 10.14.225.73 with SMTP id y49mr12232103eep.43.1399393248484;
+        Tue, 06 May 2014 09:20:48 -0700 (PDT)
+Return-Path: <t.buchberger@4teamwork.ch>
+Received: from [10.0.0.190] (213-193-123-54.static.cablecom.ch. [213.193.123.54])
+        by mx.google.com with ESMTPSA id u46sm39726060eel.1.2014.05.06.09.20.46
+        for <m.weingart@4teamwork.ch>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 06 May 2014 09:20:46 -0700 (PDT)
+From: Thomas Buchberger <t.buchberger@4teamwork.ch>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+Subject: poseidon
+Message-Id: <239F8E7B-5168-4161-8F03-1800729E172D@4teamwork.ch>
+Date: Tue, 6 May 2014 18:20:45 +0200
+To: Michel Weingart <m.weingart@4teamwork.ch>
+Mime-Version: 1.0 (Mac OS X Mail 6.6 \(1510\))
+X-Mailer: Apple Mail (2.1510)
+
+poseidon.4teamwork.ch    =20
+    description: System
+    product: BladeCenter HS22 -[7870K4G]-
+    vendor: IBM
+    version: 07
+    serial: 06HP054
+    width: 32 bits
+    capabilities: smbios-2.5 dmi-2.5 smp-1.4 smp
+    configuration: boot=3Dnormal chassis=3Dserver cpus=3D0 =
+uuid=3D1EC35DA4-F2ED-11DF-AFBD-E41F131CE534
+  *-core
+       description: Motherboard
+       product: 68Y8163
+       vendor: IBM
+       physical id: 0
+       version: (none)
+       serial: 0B413D
+       slot: Slot01
+     *-cpu:0
+          description: CPU
+          product: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+          vendor: Intel Corp.
+          physical id: 1
+          bus info: cpu@0
+          version: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+          slot: Node 1 Socket 1
+          size: 1596MHz
+          capacity: 4GHz
+          width: 64 bits
+          clock: 2105MHz
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce =
+cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse =
+sse2 ss ht tm syscall nx rdtscp x86-64 constant_tsc nonstop_tsc pni =
+monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr sse4_1 sse4_2 popcnt lahf_lm =
+cpufreq
+        *-cache:0
+             description: L1 cache
+             physical id: 2
+             slot: Internal Cache Level 1
+             size: 32KiB
+             capacity: 32KiB
+             capabilities: asynchronous internal write-back
+        *-cache:1
+             description: L2 cache
+             physical id: 3
+             slot: Internal Cache Level 2
+             size: 256KiB
+             capacity: 256KiB
+             capabilities: asynchronous internal write-back instruction
+        *-cache:2
+             description: L3 cache
+             physical id: 4
+             slot: Internal Cache Level 3
+             size: 8MiB
+             capacity: 8MiB
+             capabilities: asynchronous internal write-back instruction
+     *-firmware
+          description: BIOS
+          vendor: IBM
+          physical id: 5
+          version: -[P9E149AUS-1.10]- (09/10/2010)
+          size: 1MiB
+          capacity: 4032KiB
+          capabilities: pci pnp upgrade shadowing cdboot bootselect edd =
+int13floppynec int13floppytoshiba int13floppy360 int13floppy1200 =
+int13floppy720 int13floppy2880 int5printscreen int9keyboard int14serial =
+int17printer int10video acpi usb ls120boot zipboot biosbootspecification =
+netboot
+     *-memory
+          description: System Memory
+          physical id: 23
+          slot: System board or motherboard
+          size: 16GiB
+        *-bank:0
+             description: DIMM 1067 MHz (0.9 ns)
+             product: M392B5170EM1-CH9
+             vendor: Samsung
+             physical id: 0
+             serial: 99B13642
+             slot: DIMM01
+             size: 4GiB
+             width: 64 bits
+             clock: 1067MHz (0.9ns)
+        *-bank:1
+             description: DIMM 1067 MHz (0.9 ns)
+             product: M392B5273CH0-CH9
+             vendor: Samsung
+             physical id: 1
+             serial: E88E5842
+             slot: DIMM02
+             size: 4GiB
+             width: 64 bits
+             clock: 1067MHz (0.9ns)
+        *-bank:2
+             description: [empty]
+             physical id: 2
+             slot: DIMM03
+        *-bank:3
+             description: DIMM 1067 MHz (0.9 ns)
+             product: M392B5170EM1-CH9
+             vendor: Samsung
+             physical id: 3
+             serial: DA43642
+             slot: DIMM04
+             size: 4GiB
+             width: 64 bits
+             clock: 1067MHz (0.9ns)
+        *-bank:4
+             description: [empty]
+             physical id: 4
+             slot: DIMM05
+        *-bank:5
+             description: DIMM 1067 MHz (0.9 ns)
+             product: M392B5170EM1-CH9
+             vendor: Samsung
+             physical id: 5
+             serial: F9B13642
+             slot: DIMM06
+             size: 4GiB
+             width: 64 bits
+             clock: 1067MHz (0.9ns)
+        *-bank:6
+             description: [empty]
+             physical id: 6
+             slot: DIMM07
+        *-bank:7
+             description: [empty]
+             physical id: 7
+             slot: DIMM08
+        *-bank:8
+             description: [empty]
+             physical id: 8
+             slot: DIMM09
+        *-bank:9
+             description: [empty]
+             physical id: 9
+             slot: DIMM10
+        *-bank:10
+             description: [empty]
+             physical id: a
+             slot: DIMM11
+        *-bank:11
+             description: [empty]
+             physical id: b
+             slot: DIMM12
+     *-cpu:1
+          description: CPU
+          physical id: 3d
+          bus info: cpu@1
+          slot: Node 1 Socket 2
+          size: 2793MHz
+          capacity: 4GHz
+          clock: 2105MHz
+          capabilities: cpufreq
+     *-pci
+          description: Host bridge
+          product: 5520 I/O Hub to ESI Port
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 22
+          width: 32 bits
+          clock: 33MHz
+        *-pci:0
+             description: PCI bridge
+             product: 5520/5500/X58 I/O Hub PCI Express Root Port 1
+             vendor: Intel Corporation
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 22
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci msi pciexpress pm normal_decode =
+bus_master cap_list
+             configuration: driver=3Dpcieport-driver
+           *-scsi
+                description: SCSI storage controller
+                product: SAS1064ET PCI-Express Fusion-MPT SAS
+                vendor: LSI Logic / Symbios Logic
+                physical id: 0
+                bus info: pci@0000:0b:00.0
+                logical name: scsi0
+                version: 10
+                width: 64 bits
+                clock: 33MHz
+                capabilities: scsi pm pciexpress msi msix bus_master =
+cap_list scsi-host
+                configuration: driver=3Dmptsas latency=3D0 module=3Dmptsas=
+
+              *-disk:0 UNCLAIMED
+                   description: SCSI Disk
+                   product: MBE2147RC
+                   vendor: IBM-ESXS
+                   physical id: 0.0.0
+                   bus info: scsi@0:0.0.0
+                   version: SC16
+                   serial: D309PA906JRK
+                   capacity: 163GiB (175GB)
+                   capabilities: 15000rpm
+                   configuration: ansiversion=3D6
+              *-disk:1 UNCLAIMED
+                   description: SCSI Disk
+                   product: MBE2147RC
+                   vendor: IBM-ESXS
+                   physical id: 0.1.0
+                   bus info: scsi@0:0.1.0
+                   version: SC16
+                   serial: D309PA906JVK
+                   capacity: 163GiB (175GB)
+                   capabilities: 15000rpm
+                   configuration: ansiversion=3D6
+              *-disk:2
+                   description: SCSI Disk
+                   product: Logical Volume
+                   vendor: LSILOGIC
+                   physical id: 1.1.0
+                   bus info: scsi@0:1.1.0
+                   logical name: /dev/sda
+                   version: 3000
+                   size: 135GiB (145GB)
+                   capacity: 135GiB (145GB)
+                   capabilities: 15000rpm partitioned partitioned:dos
+                   configuration: ansiversion=3D2 signature=3D00011e31
+                 *-volume:0
+                      description: EXT3 volume
+                      vendor: Linux
+                      physical id: 1
+                      bus info: scsi@0:1.1.0,1
+                      logical name: /dev/sda1
+                      logical name: /boot
+                      version: 1.0
+                      serial: 23df1042-6b30-4663-8372-a806a8564389
+                      size: 196MiB
+                      capacity: 196MiB
+                      capabilities: primary bootable journaled =
+extended_attributes large_files huge_files recover ext3 ext2 initialized
+                      configuration: created=3D2011-03-03 18:41:28 =
+filesystem=3Dext3 label=3D/boot modified=3D2013-08-01 20:32:38 =
+mount.fstype=3Dext3 mount.options=3Drw,data=3Dordered mounted=3D2013-08-01=
+ 20:32:38 state=3Dmounted
+                 *-volume:1
+                      description: Linux LVM Physical Volume partition
+                      physical id: 2
+                      bus info: scsi@0:1.1.0,2
+                      logical name: /dev/sda2
+                      serial: llETmz-GTTL-qhYq-vkWC-y9ic-sOpw-NDkpfR
+                      size: 135GiB
+                      capacity: 135GiB
+                      capabilities: primary multi lvm2
+        *-pci:1
+             description: PCI bridge
+             product: 5520/5500/X58 I/O Hub PCI Express Root Port 3
+             vendor: Intel Corporation
+             physical id: 3
+             bus info: pci@0000:00:03.0
+             version: 22
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci msi pciexpress pm normal_decode =
+bus_master cap_list
+             configuration: driver=3Dpcieport-driver
+        *-pci:2
+             description: PCI bridge
+             product: 5520/X58 I/O Hub PCI Express Root Port 5
+             vendor: Intel Corporation
+             physical id: 5
+             bus info: pci@0000:00:05.0
+             version: 22
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci msi pciexpress pm normal_decode =
+bus_master cap_list
+             configuration: driver=3Dpcieport-driver
+        *-pci:3
+             description: PCI bridge
+             product: 5520/5500/X58 I/O Hub PCI Express Root Port 7
+             vendor: Intel Corporation
+             physical id: 7
+             bus info: pci@0000:00:07.0
+             version: 22
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci msi pciexpress pm normal_decode =
+bus_master cap_list
+             configuration: driver=3Dpcieport-driver
+           *-network:0
+                description: Ethernet interface
+                product: NetXtreme II BCM5709S Gigabit Ethernet
+                vendor: Broadcom Corporation
+                physical id: 0
+                bus info: pci@0000:10:00.0
+                logical name: eth0
+                version: 20
+                serial: e4:1f:13:1c:e5:34
+                size: 1GB/s
+                capacity: 1GB/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm vpd msi msix pciexpress bus_master =
+cap_list ethernet physical fibre 1000bt-fd autonegotiation
+                configuration: autonegotiation=3Don broadcast=3Dyes =
+driver=3Dbnx2 driverversion=3D2.1.11 duplex=3Dfull firmware=3Dbc 5.2.2 =
+NCSI 2.0.10 ip=3D212.103.94.18 latency=3D0 link=3Dyes module=3Dbnx2 =
+multicast=3Dyes port=3Dfibre speed=3D1GB/s
+           *-network:1
+                description: Ethernet interface
+                product: NetXtreme II BCM5709S Gigabit Ethernet
+                vendor: Broadcom Corporation
+                physical id: 0.1
+                bus info: pci@0000:10:00.1
+                logical name: eth1
+                version: 20
+                serial: e4:1f:13:1c:e5:36
+                size: 1GB/s
+                capacity: 1GB/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm vpd msi msix pciexpress bus_master =
+cap_list ethernet physical fibre 1000bt-fd autonegotiation
+                configuration: autonegotiation=3Don broadcast=3Dyes =
+driver=3Dbnx2 driverversion=3D2.1.11 duplex=3Dfull firmware=3Dbc 5.2.2 =
+NCSI 2.0.10 ip=3D192.168.4.118 latency=3D0 link=3Dyes module=3Dbnx2 =
+multicast=3Dyes port=3Dfibre speed=3D1GB/s
+        *-pci:4
+             description: PCI bridge
+             product: 5520/5500/X58 I/O Hub PCI Express Root Port 8
+             vendor: Intel Corporation
+             physical id: 8
+             bus info: pci@0000:00:08.0
+             version: 22
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci msi pciexpress pm normal_decode =
+bus_master cap_list
+             configuration: driver=3Dpcieport-driver
+        *-pci:5
+             description: PCI bridge
+             product: 7500/5520/5500/X58 I/O Hub PCI Express Root Port 9
+             vendor: Intel Corporation
+             physical id: 9
+             bus info: pci@0000:00:09.0
+             version: 22
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci msi pciexpress pm normal_decode =
+bus_master cap_list
+             configuration: driver=3Dpcieport-driver
+        *-system:0 UNCLAIMED
+             description: PIC
+             product: 7500/5520/5500/X58 Physical and Link Layer =
+Registers Port 0
+             vendor: Intel Corporation
+             physical id: 10
+             bus info: pci@0000:00:10.0
+             version: 22
+             width: 32 bits
+             clock: 33MHz
+             capabilities: 8259 cap_list
+             configuration: latency=3D0
+        *-system:1 UNCLAIMED
+             description: PIC
+             product: 7500/5520/5500/X58 Routing and Protocol Layer =
+Registers Port 0
+             vendor: Intel Corporation
+             physical id: 10.1
+             bus info: pci@0000:00:10.1
+             version: 22
+             width: 32 bits
+             clock: 33MHz
+             capabilities: 8259
+             configuration: latency=3D0
+        *-system:2 UNCLAIMED
+             description: PIC
+             product: 7500/5520/5500 Physical and Link Layer Registers =
+Port 1
+             vendor: Intel Corporation
+             physical id: 11
+             bus info: pci@0000:00:11.0
+             version: 22
+             width: 32 bits
+             clock: 33MHz
+             capabilities: 8259 cap_list
+             configuration: latency=3D0
+        *-system:3 UNCLAIMED
+             description: PIC
+             product: 7500/5520/5500 Routing & Protocol Layer Register =
+Port 1
+             vendor: Intel Corporation
+             physical id: 11.1
+             bus info: pci@0000:00:11.1
+             version: 22
+             width: 32 bits
+             clock: 33MHz
+             capabilities: 8259
+             configuration: latency=3D0
+        *-system:4 UNCLAIMED
+             description: PIC
+             product: 7500/5520/5500/X58 I/O Hub System Management =
+Registers
+             vendor: Intel Corporation
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: 22
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pciexpress 8259 cap_list
+             configuration: latency=3D0
+        *-system:5 UNCLAIMED
+             description: PIC
+             product: 7500/5520/5500/X58 I/O Hub GPIO and Scratch Pad =
+Registers
+             vendor: Intel Corporation
+             physical id: 14.1
+             bus info: pci@0000:00:14.1
+             version: 22
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pciexpress 8259 cap_list
+             configuration: latency=3D0
+        *-system:6 UNCLAIMED
+             description: PIC
+             product: 7500/5520/5500/X58 I/O Hub Control Status and RAS =
+Registers
+             vendor: Intel Corporation
+             physical id: 14.2
+             bus info: pci@0000:00:14.2
+             version: 22
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pciexpress 8259 cap_list
+             configuration: latency=3D0
+        *-system:7 UNCLAIMED
+             description: PIC
+             product: 7500/5520/5500/X58 I/O Hub Throttle Registers
+             vendor: Intel Corporation
+             physical id: 14.3
+             bus info: pci@0000:00:14.3
+             version: 22
+             width: 32 bits
+             clock: 33MHz
+             capabilities: 8259
+             configuration: latency=3D0
+        *-system:8 UNCLAIMED
+             description: PIC
+             product: 7500/5520/5500/X58 Trusted Execution Technology =
+Registers
+             vendor: Intel Corporation
+             physical id: 15
+             bus info: pci@0000:00:15.0
+             version: 22
+             width: 32 bits
+             clock: 33MHz
+             capabilities: io_x_-apic
+             configuration: latency=3D0
+        *-system:9 UNCLAIMED
+             description: System peripheral
+             product: 5520/5500/X58 Chipset QuickData Technology Device
+             vendor: Intel Corporation
+             physical id: 16
+             bus info: pci@0000:00:16.0
+             version: 22
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msix pciexpress pm bus_master cap_list
+             configuration: latency=3D0
+        *-system:10 UNCLAIMED
+             description: System peripheral
+             product: 5520/5500/X58 Chipset QuickData Technology Device
+             vendor: Intel Corporation
+             physical id: 16.1
+             bus info: pci@0000:00:16.1
+             version: 22
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msix pciexpress pm bus_master cap_list
+             configuration: latency=3D0
+        *-system:11 UNCLAIMED
+             description: System peripheral
+             product: 5520/5500/X58 Chipset QuickData Technology Device
+             vendor: Intel Corporation
+             physical id: 16.2
+             bus info: pci@0000:00:16.2
+             version: 22
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msix pciexpress pm bus_master cap_list
+             configuration: latency=3D0
+        *-system:12 UNCLAIMED
+             description: System peripheral
+             product: 5520/5500/X58 Chipset QuickData Technology Device
+             vendor: Intel Corporation
+             physical id: 16.3
+             bus info: pci@0000:00:16.3
+             version: 22
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msix pciexpress pm bus_master cap_list
+             configuration: latency=3D0
+        *-system:13 UNCLAIMED
+             description: System peripheral
+             product: 5520/5500/X58 Chipset QuickData Technology Device
+             vendor: Intel Corporation
+             physical id: 16.4
+             bus info: pci@0000:00:16.4
+             version: 22
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msix pciexpress pm bus_master cap_list
+             configuration: latency=3D0
+        *-system:14 UNCLAIMED
+             description: System peripheral
+             product: 5520/5500/X58 Chipset QuickData Technology Device
+             vendor: Intel Corporation
+             physical id: 16.5
+             bus info: pci@0000:00:16.5
+             version: 22
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msix pciexpress pm bus_master cap_list
+             configuration: latency=3D0
+        *-system:15 UNCLAIMED
+             description: System peripheral
+             product: 5520/5500/X58 Chipset QuickData Technology Device
+             vendor: Intel Corporation
+             physical id: 16.6
+             bus info: pci@0000:00:16.6
+             version: 22
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msix pciexpress pm bus_master cap_list
+             configuration: latency=3D0
+        *-system:16 UNCLAIMED
+             description: System peripheral
+             product: 5520/5500/X58 Chipset QuickData Technology Device
+             vendor: Intel Corporation
+             physical id: 16.7
+             bus info: pci@0000:00:16.7
+             version: 22
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msix pciexpress pm bus_master cap_list
+             configuration: latency=3D0
+        *-usb:0
+             description: USB controller
+             product: 82801JI (ICH10 Family) USB UHCI Controller #4
+             vendor: Intel Corporation
+             physical id: 1a
+             bus info: pci@0000:00:1a.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master cap_list
+             configuration: driver=3Duhci_hcd latency=3D0 =
+module=3Duhci_hcd
+           *-usbhost
+                product: UHCI Host Controller
+                vendor: Linux 2.6.18-348.12.1.el5 uhci_hcd
+                physical id: 1
+                bus info: usb@3
+                logical name: usb3
+                version: 2.06
+                capabilities: usb-1.10
+                configuration: driver=3Dhub maxpower=3D0mA slots=3D2 =
+speed=3D12.0MB/s
+              *-usb
+                   description: Communication device
+                   product: RNDIS/CDC ETHER
+                   vendor: IBM
+                   physical id: 2
+                   bus info: usb@3:2
+                   version: 2.15
+                   capabilities: usb-2.00
+                   configuration: driver=3Dcdc_ether maxpower=3D100mA =
+speed=3D12.0MB/s
+        *-usb:1
+             description: USB controller
+             product: 82801JI (ICH10 Family) USB2 EHCI Controller #2
+             vendor: Intel Corporation
+             physical id: 1a.7
+             bus info: pci@0000:00:1a.7
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=3Dehci_hcd latency=3D0 =
+module=3Dehci_hcd
+           *-usbhost
+                product: EHCI Host Controller
+                vendor: Linux 2.6.18-348.12.1.el5 ehci_hcd
+                physical id: 1
+                bus info: usb@1
+                logical name: usb1
+                version: 2.06
+                capabilities: usb-2.00
+                configuration: driver=3Dhub maxpower=3D0mA slots=3D6 =
+speed=3D480.0MB/s
+        *-pci:6
+             description: PCI bridge
+             product: 82801JI (ICH10 Family) PCI Express Root Port 1
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode =
+bus_master cap_list
+             configuration: driver=3Dpcieport-driver
+        *-pci:7
+             description: PCI bridge
+             product: 82801JI (ICH10 Family) PCI Express Root Port 5
+             vendor: Intel Corporation
+             physical id: 1c.4
+             bus info: pci@0000:00:1c.4
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode =
+bus_master cap_list
+             configuration: driver=3Dpcieport-driver
+           *-pci
+                description: PCI bridge
+                product: VSC452 [SuperBMC]
+                vendor: Vitesse Semiconductor
+                physical id: 0
+                bus info: pci@0000:06:00.0
+                version: 01
+                width: 32 bits
+                clock: 33MHz
+                capabilities: pci msi pm pciexpress normal_decode =
+bus_master cap_list
+              *-display UNCLAIMED
+                   description: VGA compatible controller
+                   product: MGA G200EV
+                   vendor: Matrox Electronics Systems Ltd.
+                   physical id: 0
+                   bus info: pci@0000:07:00.0
+                   version: 00
+                   width: 32 bits
+                   clock: 33MHz
+                   capabilities: pm vga_controller bus_master cap_list
+                   configuration: latency=3D64 maxlatency=3D32 mingnt=3D16=
+
+        *-usb:2
+             description: USB controller
+             product: 82801JI (ICH10 Family) USB UHCI Controller #1
+             vendor: Intel Corporation
+             physical id: 1d
+             bus info: pci@0000:00:1d.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master cap_list
+             configuration: driver=3Duhci_hcd latency=3D0 =
+module=3Duhci_hcd
+           *-usbhost
+                product: UHCI Host Controller
+                vendor: Linux 2.6.18-348.12.1.el5 uhci_hcd
+                physical id: 1
+                bus info: usb@4
+                logical name: usb4
+                version: 2.06
+                capabilities: usb-1.10
+                configuration: driver=3Dhub maxpower=3D0mA slots=3D2 =
+speed=3D12.0MB/s
+        *-usb:3
+             description: USB controller
+             product: 82801JI (ICH10 Family) USB UHCI Controller #2
+             vendor: Intel Corporation
+             physical id: 1d.1
+             bus info: pci@0000:00:1d.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master cap_list
+             configuration: driver=3Duhci_hcd latency=3D0 =
+module=3Duhci_hcd
+           *-usbhost
+                product: UHCI Host Controller
+                vendor: Linux 2.6.18-348.12.1.el5 uhci_hcd
+                physical id: 1
+                bus info: usb@5
+                logical name: usb5
+                version: 2.06
+                capabilities: usb-1.10
+                configuration: driver=3Dhub maxpower=3D0mA slots=3D2 =
+speed=3D12.0MB/s
+        *-usb:4
+             description: USB controller
+             product: 82801JI (ICH10 Family) USB UHCI Controller #3
+             vendor: Intel Corporation
+             physical id: 1d.2
+             bus info: pci@0000:00:1d.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master cap_list
+             configuration: driver=3Duhci_hcd latency=3D0 =
+module=3Duhci_hcd
+           *-usbhost
+                product: UHCI Host Controller
+                vendor: Linux 2.6.18-348.12.1.el5 uhci_hcd
+                physical id: 1
+                bus info: usb@6
+                logical name: usb6
+                version: 2.06
+                capabilities: usb-1.10
+                configuration: driver=3Dhub maxpower=3D0mA slots=3D2 =
+speed=3D12.0MB/s
+        *-usb:5
+             description: USB controller
+             product: 82801JI (ICH10 Family) USB2 EHCI Controller #1
+             vendor: Intel Corporation
+             physical id: 1d.7
+             bus info: pci@0000:00:1d.7
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=3Dehci_hcd latency=3D0 =
+module=3Dehci_hcd
+           *-usbhost
+                product: EHCI Host Controller
+                vendor: Linux 2.6.18-348.12.1.el5 ehci_hcd
+                physical id: 1
+                bus info: usb@2
+                logical name: usb2
+                version: 2.06
+                capabilities: usb-2.00
+                configuration: driver=3Dhub maxpower=3D0mA slots=3D6 =
+speed=3D480.0MB/s
+              *-usb
+                   description: USB hub
+                   product: CY7C65640 USB-2.0 "TetraHub"
+                   vendor: Cypress Semiconductor Corp.
+                   physical id: 3
+                   bus info: usb@2:3
+                   version: 0.07
+                   capabilities: usb-2.00
+                   configuration: driver=3Dhub maxpower=3D100mA slots=3D2 =
+speed=3D480.0MB/s
+        *-pci:8
+             description: PCI bridge
+             product: 82801 PCI Bridge
+             vendor: Intel Corporation
+             physical id: 1e
+             bus info: pci@0000:00:1e.0
+             version: 90
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci subtractive_decode bus_master cap_list
+        *-isa
+             description: ISA bridge
+             product: 82801JIB (ICH10) LPC Interface Controller
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master cap_list
+             configuration: latency=3D0
+        *-serial
+             description: SMBus
+             product: 82801JI (ICH10 Family) SMBus Controller
+             vendor: Intel Corporation
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             configuration: driver=3Di801_smbus latency=3D0 =
+module=3Di2c_i801
+  *-network DISABLED
+       description: Ethernet interface
+       physical id: 1
+       logical name: usb0
+       serial: e6:1f:13:1d:e5:37
+       capabilities: ethernet physical
+       configuration: broadcast=3Dyes driver=3Dusbnet =
+driverversion=3D22-Aug-2005 firmware=3DCDC Ethernet Device link=3Dno =
+multicast=3Dyes
+
+
