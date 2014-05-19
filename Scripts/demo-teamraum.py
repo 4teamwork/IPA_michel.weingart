@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
-
-import git
+import git #Damit die Pakete von github geklont werden können
 import os  #Bibliothek um z.B konsolebefehle übergeben zu können
 
 RUNSCRIPT = "script"
@@ -28,6 +27,8 @@ print "We are currently in %s " % os.getcwd()
 #Repository klonen nach hier
 repo = git.Git()
 repo.clone(REPOURL, '.') 
+
+
 
 
 #Dem Skript müssen Optionen mitgegeben werden können(python-pfad)
