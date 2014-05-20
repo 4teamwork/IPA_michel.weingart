@@ -3,29 +3,41 @@
 import git #Damit die Pakete von github geklont werden können
 import os  #Bibliothek um z.B konsolebefehle übergeben zu können Operating System
 import sys #Bibliothek um Interpreter Python ansprechen zu können z.B maximale Rekursionstiefe
-from optparse import OptionParser #Dem Skript können Optionen mitgegeben werden
-parser = OptionParser() #OptionParser wird instanziiert
+from optparse import OptionParser #Dem Skript können Optionen und Argumente mitgegeben werden
 
-RUNSCRIPT = "script"
+#Das Paket buildout-base erhält die Konstante REPOURL
 REPOURL = 'git@git.4teamwork.ch:egov/buildout-base.git'
-DIRNAME = "demo-teamraum"
+
 #PYTHONPATH = "/Users/mischu/Plone/python/python-2.7/bin/python2.7"
 
-def printstars(toprint): #Um wichtige Abschnitte im Quellcode zu markieren
+#Um wichtige Abschnitte im Quellcode zu markieren
+def printstars(toprint): 
     print "*" * 20
     print toprint
     print "*" * 20
 
+#OptionParser wird instanziiert
+parser = OptionParser() 
+
 #  sys.executable -> Das Python mit welchem ich aktuell das Script starte wird genommen.              
 parser.set_defaults(pythonpath=sys.executable)
 
-#Option um den Python-Pfad angeben zu können wird hinzugefüt -> -p = python-path dest = unter welchem Namen der Wert er Option später im Programm verfügbar gemacht werden soll.
+#Option, um den Python-Pfad angeben zu können, wird hinzugefüt -> -p = python-path dest = unter welchem Namen der Wert er Option später im Programm verfügbar gemacht werden soll.
 parser.add_option("-p", dest="pythonpath", help="If you dont set a path to the python, it will take the system python" )
 
 
 #Optionen und Argumente werden hier geparset
 options, args = parser.parse_args()
 
+#Benötige 1 Argument sonst
+if len(args) != 1:
+    parser.print_usage()
+    print "ERROR: You must give me a target directory"
+    sys.exit()
+
+#Argument wird din Konstante DIRNAME gespeichert
+DIRNAME = args[0]
+    
 #Pfad des Pythons wird dem OptionParser entnommen
 PYTHONPATH = options.pythonpath 
 
@@ -67,9 +79,6 @@ for foldername in ['bin', 'parts', 'buildout.cfg']:
 printstars("Starting instance")
 os.system('bin/instance1 start')
         
-
-
-#Dem Skript müssen Optionen mitgegeben werden können(Instanzenpfad)
 
 
 
