@@ -3,17 +3,32 @@
 import git #Damit die Pakete von github geklont werden können
 import os  #Bibliothek um z.B konsolebefehle übergeben zu können Operating System
 import sys #Bibliothek um Interpreter Python ansprechen zu können z.B maximale Rekursionstiefe
+from optparse import OptionParser #Dem Skript können Optionen mitgegeben werden
+parser = OptionParser() #OptionParser wird instanziiert
 
 RUNSCRIPT = "script"
 REPOURL = 'git@git.4teamwork.ch:egov/buildout-base.git'
-DIRNAME = "ordner"
-PYTHONPATH = "/Users/mischu/Plone/python/python-2.7/bin/python2.7"
+DIRNAME = "demo-teamraum"
+#PYTHONPATH = "/Users/mischu/Plone/python/python-2.7/bin/python2.7"
 
 def printstars(toprint): #Um wichtige Abschnitte im Quellcode zu markieren
     print "*" * 20
     print toprint
     print "*" * 20
-     
+
+#  sys.executable -> Das Python mit welchem ich aktuell das Script starte wird genommen.              
+parser.set_defaults(pythonpath=sys.executable)
+
+#Option um den Python-Pfad angeben zu können wird hinzugefüt -> -p = python-path dest = unter welchem Namen der Wert er Option später im Programm verfügbar gemacht werden soll.
+parser.add_option("-p", dest="pythonpath", help="If you dont set a path to the python, it will take the system python" )
+
+
+#Optionen und Argumente werden hier geparset
+options, args = parser.parse_args()
+
+#Pfad des Pythons wird dem OptionParser entnommen
+PYTHONPATH = options.pythonpath 
+
 #Schleife um zu prüfen ob die Instanz schon existiert.
 if not os.path.exists(DIRNAME):
     os.makedirs(DIRNAME)
@@ -55,7 +70,7 @@ os.system('bin/instance1 start')
 
 
 #Dem Skript müssen Optionen mitgegeben werden können(Instanzenpfad)
-#Dem Skript müssen Optionen mitgegeben werden können(python-pfad)
+
 
 
     
