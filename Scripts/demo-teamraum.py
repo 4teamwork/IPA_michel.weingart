@@ -91,4 +91,5 @@ for foldername in ['bin', 'parts', 'buildout.cfg']:
         raise Exception('missing:' + foldername)
 
 printstars("Starting instance")
+os.system('bin/instance1 run scripts/install_demo_site.py')
 os.system('bin/instance1 start')
